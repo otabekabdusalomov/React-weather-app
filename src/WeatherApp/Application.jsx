@@ -28,9 +28,26 @@ const Application = () => {
                  onKeyPress={search} />
             </div>
 
-            
+        {weather.main &&(
+           <div className="city">
+           <div className="info">
+               <img className="city-icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description} />
+           </div>
+           <div className="details">
+               <h2 className="city-name">
+                   <span>{weather.name}</span>
+                   <sup>{weather.sys.country}</sup>
+               </h2>
+               <div className="city-temp">
+                   {Math.round(weather.main.temp)}
+                   <sup>&deg;C</sup>
+                   <p>{weather.weather[0].description}</p>
+               </div>
+           </div>
+       </div>
+        )} 
         </div>
     );
-}
+};
 
 export default Application;

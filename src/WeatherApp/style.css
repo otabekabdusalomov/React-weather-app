@@ -27,3 +27,33 @@ h3{
     border-bottom: 1px solid #d6d6d6;
     border-radius: none;
 }
+.city{
+    max-width: 300px;
+    min-height: 300px;
+    box-shadow: 0 0 10px #d2d2d24d;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5% auto;
+    font-size: 30px;   
+}
+
+.details {
+    margin-top: 30px;
+    margin-right: 125px;
+}
+.details > .city-name {
+    font-weight: 700;
+}
+.details > .city-temp {
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 435px) {
+    .city {
+        margin-left: 100px;
+    }
+}
+
