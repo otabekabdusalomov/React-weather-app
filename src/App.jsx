@@ -1,8 +1,13 @@
 import { useState } from 'react'
+import Main from './WeatherApp/Main';
 
 function App() {
 
-  return 
+  return (
+    <>
+    <Main />
+    </>
+  );
 }
 
 export default App
